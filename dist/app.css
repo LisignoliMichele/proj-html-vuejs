@@ -1,1 +1,78 @@
+@charset "UTF-8";
+@font-face {
+  font-family: rossela;
+  src: url(../fonts/Rossela.ttf);
+}
+@font-face {
+  font-family: giloryBold;
+  src: url(../fonts/Gilroy-Bold.otf);
+}
+@font-face {
+  font-family: gilory;
+  src: url(../fonts/Gilroy-Light.otf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: transparent;
+}
 
+body {
+  background-color: #cecece;
+  font-family: Gilory;
+  color: #1b1b1b;
+}
+
+.container {
+  width: 76%;
+  margin: auto;
+}
+
+.listInline {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navBar {
+  height: 80px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+.navBar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar .nav_logo {
+  max-width: 12%;
+}
+.navBar .nav_logo img {
+  width: 100%;
+}
+.navBar .mainNav li {
+  cursor: pointer;
+}
+.navBar .mainNav li:not(:last-child) {
+  margin-right: 40px;
+}
+.navBar .mainNav li:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+  font-size: 10px;
+}
+.navBar .socialNav li {
+  color: #797979;
+  cursor: pointer;
+  font-size: 18px;
+}
+.navBar .socialNav li:not(:last-child) {
+  margin-right: 30px;
+}

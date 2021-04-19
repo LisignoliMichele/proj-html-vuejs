@@ -1,0 +1,17 @@
+@mixin my-display-flex {
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+}
+@font-face {
+   font-family: rossela;
+   src: url(../fonts/Rossela.ttf);
+}
+@font-face {
+   font-family: giloryBold;
+   src: url(../fonts/Gilroy-Bold.otf);
+}
+@font-face {
+   font-family: gilory;
+   src: url(../fonts/Gilroy-Light.otf);
+}

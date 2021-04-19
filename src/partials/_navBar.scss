@@ -1,0 +1,43 @@
+.navBar{
+   height: 80px;
+   font-size: $fontNormal;
+   @include my-display-flex;
+   align-items: center;
+   background-color: $white;
+   .container{
+      @include my-display-flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .nav_logo{
+      max-width: 12%;
+      img{
+         width: 100%;
+      }
+   }
+   .mainNav{
+      li{
+         cursor: pointer;
+         &:not(:last-child){
+            margin-right: 40px;
+         }
+         &:after{
+            content: "\f078";
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            margin-left: 5px;
+            font-size: $smallIcons;
+         }
+      }
+   }
+   .socialNav{
+      li{
+         color: $boulder;
+         cursor: pointer;
+         font-size: $mediumIcons;
+         &:not(:last-child){
+            margin-right: 30px;
+         }
+      }
+   }
+}

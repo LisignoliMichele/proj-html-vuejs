@@ -1,0 +1,22 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   &:focus{
+      outline: transparent; 
+   }
+}
+body{
+   background-color: #cecece;
+   font-family: Gilory;
+   color: $coldGray;
+}
+.container{
+   width: 76%;
+   margin: auto;
+}
+.listInline{
+   @include my-display-flex;
+   list-style: none;
+   align-items: center;
+}
