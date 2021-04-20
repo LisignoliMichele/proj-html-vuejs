@@ -1,0 +1,106 @@
+.aboutUS{
+   .sectionQuotes{
+      position: relative;
+      height: 80px;
+      width: calc((100% / 2) * 0.8);
+      img{
+         position: absolute;
+         transform: translate(-50%, -50%);
+         left: 50%;
+         top:50%
+      }
+   }
+   .lyrics{
+      @include my-display-flex;
+      .titles{
+         width: 50%;
+         text-align: center;
+         h3, h2{
+            font-size: $titlesection3;
+            width: 80%;
+         }
+         h3{
+            margin-bottom: $mediumMargin;
+         }
+      }
+      .description{
+         width: 50%;
+         p{
+            line-height: 26px;
+         }
+         .button{
+            margin-top: $largeMergin;
+         }
+      }
+   }
+   .videoPlace{
+      padding: $largePadding 0;
+      @include my-display-flex;
+      justify-content: center;
+      position: relative;
+      .videoBox{
+         width: 970px;
+         height: 570px;
+         overflow: hidden;
+         border-radius: 10px;
+         position: relative;
+         .video{
+            img{
+               width: 100%;
+               transition: $picturesTransition;
+               &:hover{
+                  transform: scale(1.1);
+               }
+            }
+         }
+         .youtubeIcon{
+            cursor: pointer;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+         }
+      }
+      .Background_shapes{
+         > *{
+            position: absolute;
+         }
+         .blueStain{
+            z-index: -2;
+            top: 15%;
+            left: 0%;
+            max-width: 200px;
+            img{
+               width: 100%;
+            }
+         }
+         .greenPois{
+            z-index: -1;
+            top: 20%;
+            left: 0%;
+            max-width: 200px;
+            img{
+               width: 100%;
+            }
+         }
+         .bluePois{
+            z-index: -1;
+            top: 65%;
+            right: 0%;
+            img{
+               width: 100%;
+            }
+         }
+         .circle{
+            max-width: 100px;
+            z-index: 5;
+            top: 40%;
+            right: 0%;
+            img{
+               width: 100%
+            }
+         }
+      }
+   }
+   
+}

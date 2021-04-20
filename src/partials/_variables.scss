@@ -1,52 +1,31 @@
 // COLORS PALETTE
-// $white: #ffffff;
-// $bayOfMany: #224184;
-// $silver: #bcbcbc;
-// $coldGray: #1b1b1b;
-// $tulipTree: #efab43;
-// $boulder: #797979;
-// $cerulean: #029fcc;
-// $thunderbird: #d71f18;
-// $malibu_H2: #69a0fd;
-// $walnut: #784619;
-// $pickledBluewood: #374a5e;
-// $hintOfRed: #f4f0ef;
-// $tussock: #cc9f4c;
-// $towerGray: #a3b8be;
-// $matrix: #a65d50;
-// $vibrantTussok: #c2944f;
-// $mutedDustyGray: #9a9898;
-// $darkVibrantBayOfMany: #22437d;
-// $darkMutedSmaltBlue: #4f7f85;
-// $lightVibrantIceCold: #b1e4f4;
 $titlesblue: #6AC5F1;
 $hoverbluebtns: #6ec6ef;
 $orangeBtns: #ed6f3b;
+$transpOrange: rgba(237, 111, 59, 0.1);
 $white: #ffffff;
 $black: #000000;
 $textDark:#333333;
+$textLight: #696969;
 $iconsDarkGray: #797979;
 $bgHero: #fbf9f6;
 // FONTSIZES
-$fontNormal: 16px;
+$fontSmall: 16px;
+$fontNormal: 18px;
 $mediumIcons: 18px;
 $smallIcons: 10px;
 $titleh2BIG: 65px;
 $titleh3BIG: 40px;
+$titlesection3: 50px;
 $titleh4SMALL: 22px;
 $h2Medium: 45px;
 $h3Medium: 35px;
-//FONT FAMILy
-$rossela: rossela;
-$gilory200: giloryLight;
-$gilory300: giloryRegular;
-$gilory400: giloryMedium;
-$gilory500: gilorySemiBold;
-$gilory600: giloryBold;
 //MARGINS-PADDINGS
 $smallMargin: 15px;
 $mediumMargin: 30px;
 $largeMergin: 50px;
-$paddingSection: 60px;
+$paddingSection: 80px;
+$largePadding: 200px;
 //TRANSITIONS
 $normalTransition: all 0.3s;
+$picturesTransition: all 2s;

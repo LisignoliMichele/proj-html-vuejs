@@ -1,9 +1,10 @@
 .btn-orange{
    border: 1px solid $orangeBtns;
    background-color: $orangeBtns;
-   font-family: $gilory300;
+   font-family: gilory;
+   font-weight: 500;
    color: $white;
-   font-size: $fontNormal;
+   font-size: $fontSmall;
    padding: 15px 25px;
    border-radius: 5px;
    cursor: pointer;
@@ -11,6 +12,23 @@
    &:hover{
       background-color: $hoverbluebtns;
       border: 1px solid $hoverbluebtns;
+
+   }
+}
+.btn-transp-orange{
+   border: transparent;
+   background-color: $transpOrange;
+   font-family: gilory;
+   font-weight: 500;
+   color: $orangeBtns;
+   font-size: $fontSmall;
+   padding: 15px 25px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: $normalTransition;
+   &:hover{
+      background-color: $orangeBtns;
+      color: $white;
 
    }
 }

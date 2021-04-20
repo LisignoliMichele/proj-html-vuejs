@@ -21,49 +21,39 @@
         margin: $smallMargin 0;
       }
       p{
-         font-family: $gilory200; 
+         font-family: gilory;
+         font-weight: 200; 
          line-height: 22px;
+         font-size: $fontSmall;
        }
    }
    .Background_shapes{
-      
-      .pencil_line{
-         z-index: 6;
+      img{
          width: 100%;
-         position: absolute;    
-         top: 6%;
+      }
+      > *{
+         position: absolute;   
+      }
+      .pencil_line{
+         z-index: 6;    
+         top: 10%;
          left: 0;
-         img{
-            width: 100%;
-         }
       }
       .drop{
-         z-index: 5;
-         position: absolute;    
-         top: 4%;
-         left: -5%;
-         transform: rotate(-125deg);
-         img{
-            width: 100%;
-         }
+         z-index: 5;    
+         top: 10%;
+         left: -3%;
+         transform: rotate(-140deg);
       }
       .lines_circle{
-         z-index: 5;
-         position: absolute;    
-         top: 17%;
+         z-index: 5;    
+         top: 30%;
          right: -2%;
-         img{
-            width: 100%;
-         }
       }
       .transparentStain{
-         z-index: 5;
-         position: absolute;    
-         top: 33%;
-         right: 12%;
-         img{
-            width: 100%;
-         }
+         z-index: 5;    
+         top: 35%;
+         right: 15%;
       }
    }
 } 

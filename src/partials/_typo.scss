@@ -1,14 +1,19 @@
 h2{
-   font-family: $rossela;
-   color: $titlesblue;
+   font-family: rossela;
    font-weight: 100;
+   color: $titlesblue;
 }
 h3{
-   font-family: $gilory500;
+   font-family: gilory;
+   font-weight: 600;
 }
 h4{
-   font-family: $gilory400; 
+   font-family: gilory; 
+   font-weight: 500;
 }
 p{
-   font-family: $gilory300;
+   font-family: gilory;
+   font-weight: 300;
+   color: $textLight;
+
 }
