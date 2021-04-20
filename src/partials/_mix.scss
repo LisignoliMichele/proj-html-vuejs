@@ -7,12 +7,15 @@
    }
 }
 body{
-   background-color: #cecece;
    font-family: $gilory300;
    color: $textDark;
 }
 .container{
    width: 76%;
+   margin: auto;
+}
+.small_container{
+   width: 60%;
    margin: auto;
 }
 .listInline{

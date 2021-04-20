@@ -1,0 +1,69 @@
+.intro {
+   position: relative;
+   overflow: hidden;
+   .titles{
+      text-align: center;
+      margin-bottom: $largeMergin;
+   }
+   .programs{
+      @include my-display-flex;
+      .program{
+         z-index: 10;
+         &:nth-child(even){
+            margin-top: $largeMergin
+         }
+         &:not(:last-child){
+            margin-right: 30px;
+         }
+      }
+      h4{
+        font-size: $titleh4SMALL; 
+        margin: $smallMargin 0;
+      }
+      p{
+         font-family: $gilory200; 
+         line-height: 22px;
+       }
+   }
+   .Background_shapes{
+      
+      .pencil_line{
+         z-index: 6;
+         width: 100%;
+         position: absolute;    
+         top: 6%;
+         left: 0;
+         img{
+            width: 100%;
+         }
+      }
+      .drop{
+         z-index: 5;
+         position: absolute;    
+         top: 4%;
+         left: -5%;
+         transform: rotate(-125deg);
+         img{
+            width: 100%;
+         }
+      }
+      .lines_circle{
+         z-index: 5;
+         position: absolute;    
+         top: 17%;
+         right: -2%;
+         img{
+            width: 100%;
+         }
+      }
+      .transparentStain{
+         z-index: 5;
+         position: absolute;    
+         top: 33%;
+         right: 12%;
+         img{
+            width: 100%;
+         }
+      }
+   }
+} 

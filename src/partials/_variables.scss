@@ -33,7 +33,8 @@ $mediumIcons: 18px;
 $smallIcons: 10px;
 $titleh2BIG: 65px;
 $titleh3BIG: 40px;
-$h2Medium: 50px;
+$titleh4SMALL: 22px;
+$h2Medium: 45px;
 $h3Medium: 35px;
 //FONT FAMILy
 $rossela: rossela;
@@ -42,8 +43,10 @@ $gilory300: giloryRegular;
 $gilory400: giloryMedium;
 $gilory500: gilorySemiBold;
 $gilory600: giloryBold;
-//MARGINS
+//MARGINS-PADDINGS
+$smallMargin: 15px;
 $mediumMargin: 30px;
-
+$largeMergin: 50px;
+$paddingSection: 60px;
 //TRANSITIONS
 $normalTransition: all 0.3s;

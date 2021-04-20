@@ -33,13 +33,17 @@
 }
 
 body {
-  background-color: #cecece;
   font-family: giloryRegular;
   color: #333333;
 }
 
 .container {
   width: 76%;
+  margin: auto;
+}
+
+.small_container {
+  width: 60%;
   margin: auto;
 }
 
@@ -68,10 +72,19 @@ body {
 h2 {
   font-family: rossela;
   color: #6AC5F1;
+  font-weight: 100;
 }
 
 h3 {
   font-family: gilorySemiBold;
+}
+
+h4 {
+  font-family: giloryMedium;
+}
+
+p {
+  font-family: giloryRegular;
 }
 
 .navBar {
@@ -127,7 +140,6 @@ h3 {
 }
 .hero .lyrics h2 {
   font-size: 65px;
-  font-weight: 100;
 }
 .hero .lyrics h3 {
   font-size: 40px;
@@ -213,5 +225,82 @@ h3 {
   right: 10%;
 }
 .hero .images .portrait img {
+  width: 100%;
+}
+
+section {
+  padding: 60px 0;
+}
+section h2 {
+  font-size: 45px;
+}
+section h3 {
+  font-size: 35px;
+}
+
+.intro {
+  position: relative;
+  overflow: hidden;
+}
+.intro .titles {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.intro .programs {
+  display: flex;
+}
+.intro .programs .program {
+  z-index: 10;
+}
+.intro .programs .program:nth-child(even) {
+  margin-top: 50px;
+}
+.intro .programs .program:not(:last-child) {
+  margin-right: 30px;
+}
+.intro .programs h4 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+.intro .programs p {
+  font-family: giloryLight;
+  line-height: 22px;
+}
+.intro .Background_shapes .pencil_line {
+  z-index: 6;
+  width: 100%;
+  position: absolute;
+  top: 6%;
+  left: 0;
+}
+.intro .Background_shapes .pencil_line img {
+  width: 100%;
+}
+.intro .Background_shapes .drop {
+  z-index: 5;
+  position: absolute;
+  top: 4%;
+  left: -5%;
+  transform: rotate(-125deg);
+}
+.intro .Background_shapes .drop img {
+  width: 100%;
+}
+.intro .Background_shapes .lines_circle {
+  z-index: 5;
+  position: absolute;
+  top: 17%;
+  right: -2%;
+}
+.intro .Background_shapes .lines_circle img {
+  width: 100%;
+}
+.intro .Background_shapes .transparentStain {
+  z-index: 5;
+  position: absolute;
+  top: 33%;
+  right: 12%;
+}
+.intro .Background_shapes .transparentStain img {
   width: 100%;
 }
