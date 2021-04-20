@@ -4,12 +4,24 @@
   src: url(../fonts/Rossela.ttf);
 }
 @font-face {
-  font-family: giloryBold;
-  src: url(../fonts/Gilroy-Bold.otf);
+  font-family: giloryLight;
+  src: url(../fonts/Gilroy-Light.ttf);
 }
 @font-face {
-  font-family: gilory;
-  src: url(../fonts/Gilroy-Light.otf);
+  font-family: giloryRegular;
+  src: url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: giloryMedium;
+  src: url(../fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: gilorySemiBold;
+  src: url(../fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: giloryBold;
+  src: url(../fonts/Gilroy-Bold.ttf);
 }
 * {
   box-sizing: border-box;
@@ -22,8 +34,8 @@
 
 body {
   background-color: #cecece;
-  font-family: Gilory;
-  color: #1b1b1b;
+  font-family: giloryRegular;
+  color: #333333;
 }
 
 .container {
@@ -37,8 +49,33 @@ body {
   align-items: center;
 }
 
+.btn-orange {
+  border: 1px solid #ed6f3b;
+  background-color: #ed6f3b;
+  font-family: giloryRegular;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-orange:hover {
+  background-color: #6ec6ef;
+  border: 1px solid #6ec6ef;
+}
+
+h2 {
+  font-family: rossela;
+  color: #6AC5F1;
+}
+
+h3 {
+  font-family: gilorySemiBold;
+}
+
 .navBar {
-  height: 80px;
+  height: 70px;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -75,4 +112,106 @@ body {
 }
 .navBar .socialNav li:not(:last-child) {
   margin-right: 30px;
+}
+
+.hero {
+  height: 750px;
+  background-color: #fbf9f6;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.hero .lyrics {
+  margin: auto;
+  text-align: center;
+}
+.hero .lyrics h2 {
+  font-size: 65px;
+  font-weight: 100;
+}
+.hero .lyrics h3 {
+  font-size: 40px;
+}
+.hero .lyrics .button {
+  margin-top: 30px;
+}
+.hero .Background_shapes > img {
+  width: 100%;
+}
+.hero .Background_shapes > * {
+  position: absolute;
+}
+.hero .Background_shapes .headSketch {
+  z-index: 5;
+  top: 55%;
+  left: 25%;
+}
+.hero .Background_shapes .featherSketch {
+  z-index: 5;
+  top: 17%;
+  right: 8%;
+}
+.hero .Background_shapes .dots {
+  z-index: 4;
+  top: 20%;
+  left: 1%;
+}
+.hero .Background_shapes .pois {
+  z-index: 4;
+  top: 70%;
+  right: 20%;
+}
+.hero .Background_shapes .blueStain {
+  z-index: 3;
+  top: 25%;
+  left: -3%;
+}
+.hero .Background_shapes .brushStrokes {
+  z-index: 3;
+  top: 67%;
+  right: 5%;
+}
+.hero .Background_shapes .yellowStain {
+  z-index: 3;
+  top: 64%;
+  right: 24%;
+}
+.hero .Background_shapes .drop {
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  right: 5%;
+}
+.hero .Background_shapes .jumboDrop {
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.hero .images .temperaDraw {
+  z-index: 6;
+  position: absolute;
+  top: 17%;
+  left: 13%;
+}
+.hero .images .temperaDraw img {
+  width: 100%;
+}
+.hero .images .spaceMonkey {
+  z-index: 7;
+  position: absolute;
+  top: 45%;
+  left: 9%;
+}
+.hero .images .spaceMonkey img {
+  width: 100%;
+}
+.hero .images .portrait {
+  z-index: 6;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+.hero .images .portrait img {
+  width: 100%;
 }

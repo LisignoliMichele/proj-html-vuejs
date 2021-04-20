@@ -1,5 +1,5 @@
 .navBar{
-   height: 80px;
+   height: 70px;
    font-size: $fontNormal;
    @include my-display-flex;
    align-items: center;
@@ -32,7 +32,7 @@
    }
    .socialNav{
       li{
-         color: $boulder;
+         color: $iconsDarkGray;
          cursor: pointer;
          font-size: $mediumIcons;
          &:not(:last-child){

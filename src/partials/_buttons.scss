@@ -1,0 +1,16 @@
+.btn-orange{
+   border: 1px solid $orangeBtns;
+   background-color: $orangeBtns;
+   font-family: $gilory300;
+   color: $white;
+   font-size: $fontNormal;
+   padding: 15px 25px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: $normalTransition;
+   &:hover{
+      background-color: $hoverbluebtns;
+      border: 1px solid $hoverbluebtns;
+
+   }
+}
