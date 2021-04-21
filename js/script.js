@@ -47,5 +47,6 @@ var swiper = new Swiper('.swiper-container', {
          ],
          testimonialsIndex: 0,
       },
-   }
+   },
+   Vue.config.ignoredElements = [swiper-container]
 );
