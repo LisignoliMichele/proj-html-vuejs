@@ -30,9 +30,6 @@
       <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
       <!-- /vue JS    _development version, includes helpful console warnings -->
       <link rel="stylesheet" href="dist/app.css">
-      <!-- swiperAwesome cdn -->
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-      <!-- swiperAwesome cdn -->
       <title>ARTIST</title>
    </head>
    <body>
@@ -239,174 +236,27 @@
             <!-- SECTION 3 - TESTIMONIALS -->
             <section class="section_3 testimonials">
                <div class="titles">
-                  <h2>Testimonials</h2>t
+                  <h2>Testimonials</h2>
                   <h3>Why do people love me?</h3>
-               </div>
-               <!-- CAROUSEL -->
-               <div class="swiper-container cards">
-                  <div class="swiper-wrapper">
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>Professional team of specialists and passionate mentors at reach</h4></div>
-                        <div class="feed"><p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p></div>
+               </div><!-- CAROUSEL -->
+               <div class="carousel"data-flickity='{ "wrapAround": true }'>
+                  <div v-for="element in testimonials" class="carousel-cell">
+                     <div class="card">
+                        <div class="feedTitle"><h4>{{element.feedTitle}}</h4></div>
+                        <div class="feed"><p>{{element.feed}}</p></div>
                         <div class="info">
                            <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-01.jpg" alt="profile picture">
+                              <img :src="'img/section3_IMG/artist-testimonial-avatar-' + element.avatar + '.jpg'" alt="profile picture">
                            </div>
                            <div class="about">
-                              <h5>Madley Pondor</h5>
-                              <p>/ IT Specialist</p>
+                              <h5>{{element.name}}</h5>
+                              <p>/ {{element.job}}</p>
                            </div>
                         </div>
                      </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>It's a choice of quality for people with special needs</h4></div>
-                        <div class="feed"><p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-02.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Florence Themes</h5>
-                              <p>/ Multimedia Admin</p>
-                           </div>
-                        </div>
-                    </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>High level of efficiency and scientific teaching methods</h4></div>
-                        <div class="feed"><p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-04.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Mina Hollace</h5>
-                              <p>/ Freelance</p>
-                           </div>
-                        </div>
-                    </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>It's a choice of quality for people with special needs</h4></div>
-                        <div class="feed"><p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-02.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Florence Themes</h5>
-                              <p>/ Multimedia Admin</p>
-                           </div>
-                        </div>
-                    </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>High level of efficiency and scientific teaching methods</h4></div>
-                        <div class="feed"><p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-04.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Mina Hollace</h5>
-                              <p>/ Freelance</p>
-                           </div>
-                        </div>
-                    </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>The MaxCoach team works really hard to ensure high quality</h4></div>
-                        <div class="feed"><p>I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-03.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Luvic Dubble</h5>
-                              <p>/ Private Tutor</p>
-                           </div>
-                        </div>
-                    </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>High level of efficiency and scientific teaching methods</h4></div>
-                        <div class="feed"><p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-04.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Mina Hollace</h5>
-                              <p>/ Freelance</p>
-                           </div>
-                        </div>
-                    </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>The MaxCoach team works really hard to ensure high quality</h4></div>
-                        <div class="feed"><p>I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-03.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Luvic Dubble</h5>
-                              <p>/ Private Tutor</p>
-                           </div>
-                        </div>
-                    </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>Professional team of specialists and passionate mentors at reach</h4></div>
-                        <div class="feed"><p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-01.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Madley Pondor</h5>
-                              <p>/ IT Specialist</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>The MaxCoach team works really hard to ensure high quality</h4></div>
-                        <div class="feed"><p>I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-03.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Luvic Dubble</h5>
-                              <p>/ Private Tutor</p>
-                           </div>
-                        </div>
-                    </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>Professional team of specialists and passionate mentors at reach</h4></div>
-                        <div class="feed"><p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-01.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Madley Pondor</h5>
-                              <p>/ IT Specialist</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide card">
-                        <div class="feedTitle"><h4>It's a choice of quality for people with special needs</h4></div>
-                        <div class="feed"><p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p></div>
-                        <div class="info">
-                           <div class=profilePic>
-                              <img src="img/section3_IMG/artist-testimonial-avatar-02.jpg" alt="profile picture">
-                           </div>
-                           <div class="about">
-                              <h5>Florence Themes</h5>
-                              <p>/ Multimedia Admin</p>
-                           </div>
-                        </div>
-                    </div>
-              
                   </div>
-               </div>
-               <!-- BULLETS -->
-               <div class="swiper-pagination"></div>
-               <!-- CAROUSEL -->
+                </div>
+               <!-- /CAROUSEL -->
                <div class="background_waves">
                   <img src="img/shapes/waves.png" alt="waves">
                </div>
@@ -430,7 +280,7 @@
          <footer></footer>
          <!-- /FOOTER -->
       </div>
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
       <script src="js/script.js"></script>
    </body>
 </html>

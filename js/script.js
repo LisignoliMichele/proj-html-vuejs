@@ -1,21 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
-   slidesPerView: 3,
-   spaceBetween: 30,
-   slidesPerGroup: 3,
-   loop: true,
-   loopFillGroupWithBlank: true,
-   pagination: {
-     el: '.swiper-pagination',
-     clickable: true,
-   },
-   navigation: {
-     nextEl: '.swiper-button-next',
-     prevEl: '.swiper-button-prev',
-   },
- });
-
- 
- var app = new Vue(
+var app = new Vue(
    {
       el: "#app",
       data:{
@@ -41,12 +24,11 @@ var swiper = new Swiper('.swiper-container', {
             {  avatar: "01",
                name: "Madley Pondor",
                feedTitle: "The MaxCoach team works really hard to ensure high quality",
-               feed:	"I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.",
+               feed:	"I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
                job: "IT Specialist",
             },
          ],
          testimonialsIndex: 0,
       },
    },
-   Vue.config.ignoredElements = [swiper-container]
 );
