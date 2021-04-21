@@ -263,7 +263,49 @@
             </section>
             <!-- /SECTION 3 - TESTIMONIALS -->
             <!-- SECTION 4 - COURSES-->
-            <section class="section_4 courses"></section>
+            <section class="section_4 courses">
+               <div class="container">
+                  <div class="titles">
+                     <h2>Artist coaching</h2>
+                     <h3>Latest Online Courses</h3>
+                  </div> 
+                  <div class="ourCourses">
+                     <div v-for="course in courses" class="course">
+                        <div class="image">
+                           <img :src="'img/section4_IMG/artist-course-' + course.image + '-480x480.jpg'" alt="course poster">
+                        </div>
+                        <div class="info">
+                           <p class="price">{{course.price}}</p>
+                           <div class="courseLink"><a href="#">{{course.name}}</a></div>
+                           <div class="details">
+                              <div class="lessons"><i class="far fa-file-alt"></i> {{course.lessonsNumb}} Lessons</div>
+                              <div class="students"><i class="far fa-user"></i> {{course.studentsNumb}} Students</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="button">
+                     <button class="btn-transp-orange">View all courses<i class="fas fa-long-arrow-alt-right"></i></button>
+                  </div>
+                  <div class="Background_shapes">
+                     <div class="drop">
+                        <img src="img/shapes/artist-shape-01.png" alt="drop">
+                     </div>
+                     <div class="bluedrop">
+                        <img src="img/shapes/blue_shape.png" alt="blue drop">
+                     </div>
+                     <div class="coursesshape">
+                        <img src="img/shapes/courses.png" alt="courses shape">
+                     </div>
+                     <!-- <div class="textCourses">
+                        <img src="img/shapes/circle_shape.png" alt="circle shape">
+                     </div> -->
+                     <!-- <div class="drop">
+                        <img src="img/shapes/circle_shape.png" alt="circle shape">
+                     </div> -->
+                  </div>
+               </div>
+            </section>
             <!-- /SECTION 4 - COURSES -->
             <!-- SECTION 5 - FROM THE BLOG -->
             <section class="section_5 fromTheBlog"></section>
