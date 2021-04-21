@@ -34,7 +34,7 @@
       }
    }
    .videoPlace{
-      padding: $largePadding 0;
+      padding-top: $largePadding;
       @include my-display-flex;
       justify-content: center;
       position: relative;

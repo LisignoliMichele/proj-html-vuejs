@@ -1,0 +1,70 @@
+.testimonials{
+   position: relative;
+   text-align: center;
+   .titles{
+      text-align: center;
+   }
+   .swiper-container {
+      width: 90%;
+      margin-top: $largeMergin;
+      .swiper-slide {
+         background-color: $white;
+         padding: $largeMergin;
+         height: 300px;
+         opacity: 0.5;
+         h4{
+            font-size: $titleh4SMALL;
+         }
+         .feed{
+            margin: $smallMargin 0;
+         }
+         .info{
+            @include my-display-flex;
+            align-items: center;
+            justify-content: center;
+            .profilePic{
+               max-width: 15%;
+               margin-right: $mediumMargin;
+               img{
+                  width: 100%;
+                  border-radius: 50%;
+               }  
+            }
+         }
+       }
+      .swiper-slide-prev,
+      .swiper-slide-next{
+         opacity: 1;
+      }
+    }
+   .swiper-pagination{
+      position: initial;
+      margin-top: $mediumMargin;
+      &-bullet{
+         vertical-align: middle;
+         width: 8px;
+         height: 8px;
+         margin: 10px;
+         background-color: $iconsDarkGray;
+         opacity: .4;
+         &-active{
+            opacity: 1;
+            width: 10px;
+            height: 10px;
+            background-color:$black;
+         }
+      }
+   }
+   .background_waves{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: -10;
+      img{
+         width: 100%
+      }
+   }
+}
+
+ 
+ 
