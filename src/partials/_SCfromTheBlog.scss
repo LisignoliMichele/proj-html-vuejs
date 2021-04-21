@@ -2,7 +2,6 @@
    background-color: $lightBlueBackground;
    position: relative;
    overflow: hidden;
-   z-index: -10;
    .titles{
       text-align: center;
    }
@@ -66,6 +65,7 @@
          &:nth-child(2){
             width: 40%;
             position: relative;
+            z-index: 10;
             .info{
                position: absolute;
                bottom: 0;
@@ -163,12 +163,12 @@
    .Background_shapes{
       > *{
          position: absolute;   
+         z-index: 2;
       }
       img{
          width: 100%;
       }
-      .line{
-         z-index: -5;    
+      .line{   
          top: 30%;
          left: 0;
          width: 100%;
@@ -182,12 +182,10 @@
          width: 15%;
          right: 30%;
          bottom: 10%;
-         z-index: -3;
       }
       .greenPois{
          left: 30%;
          top: 15%;
-         z-index: -3;
       }
    }
 }

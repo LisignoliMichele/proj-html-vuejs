@@ -109,6 +109,32 @@ var app = new Vue(
                poster: "artist-blog-01-480x356.jpg"
             }
          ],
+         events: [
+            {
+               poster:"04",
+               date: "APR 22, 2022",
+               name: "Storytelling Workshop",
+               place: "Texas, US"
+            },
+            {
+               poster:"03",
+               date: "NOV 23, 2021",
+               name: "International Art Fair 2021",
+               place: "Hamburg, Germany"
+            },
+            {
+               poster:"02",
+               date: "OCT 10, 2021",
+               name: "Painting Art Contest 2021",
+               place: "New York, US"
+            },
+            {
+               poster:"01",
+               date: "DEC 15, 2021",
+               name: "Street Performance:Call for Artist",
+               place: "Illinois, US"
+            }, 
+         ],
       },
    },
 );

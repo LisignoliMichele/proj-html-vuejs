@@ -1,0 +1,78 @@
+.upcomingEvents{
+   position: relative;
+   overflow: hidden;
+   .titles{
+      text-align: center;
+      margin-bottom: $largeMergin;
+   }
+   .events{
+      @include my-display-flex;
+      flex-wrap: wrap;
+      .event{
+         @include my-display-flex;
+         width: 50%;
+         .poster{
+            overflow: hidden;
+            margin-bottom: $largeMergin;
+            img{
+               width: 100%;
+               transition: $picturesTransition;
+            }
+         }
+         .info{
+            padding:$mediumMargin;
+            .name{
+               margin: $smallMargin 0;
+               a{
+                  text-decoration: none;
+                  font-size: $mediumIcons;
+                  font-weight: 500;
+                  color: $black;
+               }
+            }
+            .place{
+               font-size: $fontSmall;
+               font-weight: 300;
+            }
+         }
+         &:hover img{
+            transform: scale(1.1);
+         }
+         &:nth-child(1n+3){
+            flex-direction: row-reverse;
+            .info{
+               text-align: right;
+            }
+         }
+      }
+   }
+   .Background_shapes{
+      > *{
+         position: absolute;
+      }
+      .transparentStain{
+         top: 7%;
+         right: -10%;
+         z-index: -10;
+       }
+       .blueStain{
+         transform: rotate(-90deg);
+         top: 40%;
+         left: -10%;
+         z-index: -10;
+       }
+       .lineball{
+         top: 7%;
+         right: 2%;
+         z-index: -10;
+       }
+       .eventsshape{
+         top: 25%;
+         left: 2%;
+         z-index: -5;
+         img{
+            width: 70%;
+         }
+       }
+   }  
+}

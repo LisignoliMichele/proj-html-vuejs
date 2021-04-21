@@ -609,18 +609,17 @@ section h3 {
 }
 .courses .Background_shapes .coursesshape {
   top: 25%;
-  right: -2%;
+  right: 0%;
   z-index: -5;
 }
 .courses .Background_shapes .coursesshape img {
-  width: 60%;
+  width: 70%;
 }
 
 .fromTheBlog {
   background-color: #f5f7fa;
   position: relative;
   overflow: hidden;
-  z-index: -10;
 }
 .fromTheBlog .titles {
   text-align: center;
@@ -687,6 +686,7 @@ section h3 {
 .fromTheBlog .blogs .blog:nth-child(2) {
   width: 40%;
   position: relative;
+  z-index: 10;
 }
 .fromTheBlog .blogs .blog:nth-child(2) .info {
   position: absolute;
@@ -810,12 +810,12 @@ section h3 {
 }
 .fromTheBlog .Background_shapes > * {
   position: absolute;
+  z-index: 2;
 }
 .fromTheBlog .Background_shapes img {
   width: 100%;
 }
 .fromTheBlog .Background_shapes .line {
-  z-index: -5;
   top: 30%;
   left: 0;
   width: 100%;
@@ -829,10 +829,85 @@ section h3 {
   width: 15%;
   right: 30%;
   bottom: 10%;
-  z-index: -3;
 }
 .fromTheBlog .Background_shapes .greenPois {
   left: 30%;
   top: 15%;
-  z-index: -3;
+}
+
+.upcomingEvents {
+  position: relative;
+  overflow: hidden;
+}
+.upcomingEvents .titles {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.upcomingEvents .events {
+  display: flex;
+  flex-wrap: wrap;
+}
+.upcomingEvents .events .event {
+  display: flex;
+  width: 50%;
+}
+.upcomingEvents .events .event .poster {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.upcomingEvents .events .event .poster img {
+  width: 100%;
+  transition: all 2s;
+}
+.upcomingEvents .events .event .info {
+  padding: 30px;
+}
+.upcomingEvents .events .event .info .name {
+  margin: 15px 0;
+}
+.upcomingEvents .events .event .info .name a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+.upcomingEvents .events .event .info .place {
+  font-size: 16px;
+  font-weight: 300;
+}
+.upcomingEvents .events .event:hover img {
+  transform: scale(1.1);
+}
+.upcomingEvents .events .event:nth-child(1n+3) {
+  flex-direction: row-reverse;
+}
+.upcomingEvents .events .event:nth-child(1n+3) .info {
+  text-align: right;
+}
+.upcomingEvents .Background_shapes > * {
+  position: absolute;
+}
+.upcomingEvents .Background_shapes .transparentStain {
+  top: 7%;
+  right: -10%;
+  z-index: -10;
+}
+.upcomingEvents .Background_shapes .blueStain {
+  transform: rotate(-90deg);
+  top: 40%;
+  left: -10%;
+  z-index: -10;
+}
+.upcomingEvents .Background_shapes .lineball {
+  top: 7%;
+  right: 2%;
+  z-index: -10;
+}
+.upcomingEvents .Background_shapes .eventsshape {
+  top: 25%;
+  left: 2%;
+  z-index: -5;
+}
+.upcomingEvents .Background_shapes .eventsshape img {
+  width: 70%;
 }

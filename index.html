@@ -344,7 +344,40 @@
             </section>
             <!-- /SECTION 5 - FROM THE BLOG -->
             <!-- SECTION 6 - UPCOMING EVENTS -->
-            <section class="section_6 upcomingEvents"></section>
+            <section class="section_6 upcomingEvents">
+               <div class="titles">
+                  <h2>Upcoming Events</h2>
+                  <h3>Let's Work Together</h3>
+               </div> 
+               <div class="mediumContainer">
+                  <div class="events">
+                     <div v-for="event in events" class="event">
+                        <div class="poster">
+                           <img :src="'img/section6_IMG/artist-event-' + event.poster + '-250x300.jpg'" alt="event poster">
+                        </div>
+                        <div class="info">
+                           <p class="date">{{event.date}}</p>
+                           <div class="name"><a href="#">{{event.name}}</a></div>
+                           <div class="place"><i class="fas fa-map-marker-alt"></i> {{event.place}}</div>
+                        </div>
+                     </div>
+                     <div class="Background_shapes">
+                        <div class="eventsshape">
+                           <img src="img/shapes/events.png" alt="eventsshape">
+                        </div>
+                        <div class="transparentStain">
+                           <img src="img/shapes/transparentStain.png" alt="transparentStain">
+                        </div>
+                        <div class="blueStain">
+                           <img src="img/shapes/blue_shape.png" alt="blue stain">
+                        </div>
+                        <div class="lineball">
+                           <img src="img/shapes/maxcoach-shape-13.png" alt="lineball">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
             <!-- /SECTION 6 - UPCOMING EVENTS -->
             <!-- SECTION 7 - NEWSLETTERS SUBSCRIBE -->
             <section class="section_7 newsLetter"></section>
