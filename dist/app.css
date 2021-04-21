@@ -59,6 +59,11 @@ body {
   margin: auto;
 }
 
+.mediumContainer {
+  width: 68%;
+  margin: auto;
+}
+
 .small_container {
   width: 60%;
   margin: auto;
@@ -83,8 +88,8 @@ body {
   transition: all 0.3s;
 }
 .btn-orange:hover {
-  background-color: #6ec6ef;
-  border: 1px solid #6ec6ef;
+  background-color: #6cc5ef;
+  border: 1px solid #6cc5ef;
 }
 
 .btn-transp-orange {
@@ -609,4 +614,225 @@ section h3 {
 }
 .courses .Background_shapes .coursesshape img {
   width: 60%;
+}
+
+.fromTheBlog {
+  background-color: #f5f7fa;
+  position: relative;
+  overflow: hidden;
+  z-index: -10;
+}
+.fromTheBlog .titles {
+  text-align: center;
+}
+.fromTheBlog .blogs {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  position: relative;
+}
+.fromTheBlog .blogs .blog {
+  width: 22%;
+  margin: 30px;
+}
+.fromTheBlog .blogs .blog:hover img {
+  transform: scale(1.1);
+}
+.fromTheBlog .blogs .blog .info {
+  width: 100%;
+  padding: 30px;
+}
+.fromTheBlog .blogs .blog .poster {
+  overflow: hidden;
+}
+.fromTheBlog .blogs .blog .poster img {
+  width: 100%;
+  transition: all 2s;
+}
+.fromTheBlog .blogs .blog .writerJob {
+  font-size: 16px;
+  font-weight: 500;
+}
+.fromTheBlog .blogs .blog .blogLink {
+  margin: 15px 0;
+}
+.fromTheBlog .blogs .blog .blogLink a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+.fromTheBlog .blogs .blog .blogLink a:hover {
+  color: #EF6F31;
+}
+.fromTheBlog .blogs .blog .details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.fromTheBlog .blogs .blog:nth-child(1) {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  z-index: 20;
+  background-color: #ffffff;
+}
+.fromTheBlog .blogs .blog:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  z-index: 20;
+  background-color: #ffffff;
+}
+.fromTheBlog .blogs .blog:nth-child(2) {
+  width: 40%;
+  position: relative;
+}
+.fromTheBlog .blogs .blog:nth-child(2) .info {
+  position: absolute;
+  bottom: 0;
+  background-color: transparent;
+}
+.fromTheBlog .blogs .blog:nth-child(2) .info .writerJob {
+  color: #ffffff;
+}
+.fromTheBlog .blogs .blog:nth-child(2) .info .blogLink a {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.fromTheBlog .blogs .blog:nth-child(2) .info .details {
+  width: 60%;
+  color: #ffffff;
+}
+.fromTheBlog .moreBlogs {
+  text-align: center;
+  margin-top: 50px;
+}
+.fromTheBlog .moreBlogs a {
+  text-decoration: none;
+  color: #EF6F31;
+}
+.fromTheBlog .moreBlogs a:hover .message {
+  color: #cecece;
+}
+.fromTheBlog .moreBlogs a strong {
+  position: relative;
+}
+.fromTheBlog .moreBlogs a strong::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  right: 0;
+  width: 100%;
+  background-color: #EF6F31;
+  transition: all 1s;
+  opacity: 0;
+}
+.fromTheBlog .moreBlogs a strong::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  background: #f5f7fa;
+  bottom: -25px;
+  width: 10px;
+  height: 23px;
+}
+.fromTheBlog .moreBlogs a:hover strong::before {
+  opacity: 0.7;
+}
+.fromTheBlog .moreBlogs a:hover strong::after {
+  -webkit-animation-name: getIn;
+          animation-name: getIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes getIn {
+  0% {
+    left: -10%;
+  }
+  25% {
+    left: 110%;
+  }
+  26% {
+    left: -10%;
+  }
+  50% {
+    left: 110%;
+  }
+  51% {
+    left: -10%;
+  }
+  75% {
+    left: 110%;
+  }
+  76% {
+    left: -10%;
+  }
+  99% {
+    left: -100%;
+  }
+  100% {
+    left: -10%;
+  }
+}
+@keyframes getIn {
+  0% {
+    left: -10%;
+  }
+  25% {
+    left: 110%;
+  }
+  26% {
+    left: -10%;
+  }
+  50% {
+    left: 110%;
+  }
+  51% {
+    left: -10%;
+  }
+  75% {
+    left: 110%;
+  }
+  76% {
+    left: -10%;
+  }
+  99% {
+    left: -100%;
+  }
+  100% {
+    left: -10%;
+  }
+}
+.fromTheBlog .Background_shapes > * {
+  position: absolute;
+}
+.fromTheBlog .Background_shapes img {
+  width: 100%;
+}
+.fromTheBlog .Background_shapes .line {
+  z-index: -5;
+  top: 30%;
+  left: 0;
+  width: 100%;
+}
+.fromTheBlog .Background_shapes .circle {
+  width: 7%;
+  top: 20%;
+  left: 15%;
+}
+.fromTheBlog .Background_shapes .blueStain {
+  width: 15%;
+  right: 30%;
+  bottom: 10%;
+  z-index: -3;
+}
+.fromTheBlog .Background_shapes .greenPois {
+  left: 30%;
+  top: 15%;
+  z-index: -3;
 }

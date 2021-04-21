@@ -86,6 +86,29 @@ var app = new Vue(
                image: "01",
             },
          ],
+         blogsTodisplay:[
+            {
+               writerJOB: "ARTIST",
+               title: "Brush Strokes Energize Trees in Paintings",
+               date: "May 15, 2020",
+               views: "917",
+               poster: "artist-blog-03-480x356.jpeg"
+            },
+            {
+               writerJOB: "ARTIST",
+               title: "Connection Between Self-Portraits and Identity",
+               date: "May 15, 2020",
+               views: "604",
+               poster: "artist-blog-02-500x680.jpg"
+            },
+            {
+               writerJOB: "ARTIST",
+               title: "Pocket-Sized Notebooks Hold Miniature Paintings",
+               date: "May 15, 2020",
+               views: "803",
+               poster: "artist-blog-01-480x356.jpg"
+            }
+         ],
       },
    },
 );

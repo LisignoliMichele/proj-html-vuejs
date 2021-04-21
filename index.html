@@ -297,18 +297,51 @@
                      <div class="coursesshape">
                         <img src="img/shapes/courses.png" alt="courses shape">
                      </div>
-                     <!-- <div class="textCourses">
-                        <img src="img/shapes/circle_shape.png" alt="circle shape">
-                     </div> -->
-                     <!-- <div class="drop">
-                        <img src="img/shapes/circle_shape.png" alt="circle shape">
-                     </div> -->
                   </div>
                </div>
             </section>
             <!-- /SECTION 4 - COURSES -->
             <!-- SECTION 5 - FROM THE BLOG -->
-            <section class="section_5 fromTheBlog"></section>
+            <section class="section_5 fromTheBlog">
+               <div class="mediumContainer">
+                  <div class="titles">
+                     <h2>Articles and Tips</h2>
+                     <h3>Latest From The Blog</h3>
+                  </div> 
+                  <div class="blogs">
+                     <div v-for="blog in blogsTodisplay" class="blog">
+                        <div class="poster">
+                           <img :src="'img/section5_IMG/' + blog.poster" alt="blog poster">
+                        </div>
+                        <div class="info">
+                           <p class="writerJob">{{blog.writerJOB}}</p>
+                           <div class="blogLink"><a href="#">{{blog.title}}</a></div>
+                           <div class="details">
+                              <div class="date"><i class="far fa-calendar"></i> {{blog.date}}</div>
+                              <div class="views"><i class="far fa-eye"></i> {{blog.views}} views</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="moreBlogs">
+                     <a href="#"><span class="message">Get into details now?</span> <strong> View all post <i class="fas fa-long-arrow-alt-right"></i> </strong></a>​
+                  </div>
+               </div>
+               <div class="Background_shapes">
+                  <div class="line">
+                     <img src="img/shapes/maxcoach-shape-03.png" alt="line">
+                  </div>
+                  <div class="circle">
+                     <img src="img/shapes/circle_shape.png" alt="circle">
+                  </div>
+                  <div class="blueStain">
+                     <img src="img/shapes/blueStain.png" alt="blue stain">
+                  </div>
+                  <div class="greenPois">
+                     <img src="img/shapes/maxcoach-shape-05.png" alt="greenPois">
+                  </div>
+               </div>
+            </section>
             <!-- /SECTION 5 - FROM THE BLOG -->
             <!-- SECTION 6 - UPCOMING EVENTS -->
             <section class="section_6 upcomingEvents"></section>

@@ -1,0 +1,193 @@
+.fromTheBlog{
+   background-color: $lightBlueBackground;
+   position: relative;
+   overflow: hidden;
+   z-index: -10;
+   .titles{
+      text-align: center;
+   }
+   .blogs{
+      @include my-display-flex;
+      margin-top: $largeMergin;
+      justify-content: center;
+      position: relative;
+      .blog{
+         width: 22%;
+         margin: $mediumMargin;
+         &:hover img{
+             transform: scale(1.1);
+         }
+         .info{
+            width: 100%;
+            padding:$mediumMargin;
+         }
+         .poster{
+            overflow: hidden;
+            img{
+               width: 100%;
+               transition: $picturesTransition;
+            }
+         }
+         .writerJob{
+            font-size: $fontSmall;
+            font-weight: 500;
+         }
+         .blogLink{
+            margin: $smallMargin 0;
+            a{
+               text-decoration: none;
+               font-size: $mediumIcons;
+               font-weight: 500;
+               color: $black;
+               &:hover{
+                  color: $orangeBtns;  
+               }
+            }
+         }
+         .details{
+            @include my-display-flex;
+            justify-content: space-between;
+            font-size: $fontExtraSmall;
+         }
+         &:nth-child(1){
+            position: absolute;
+            left: 0;
+            bottom: 20%;;
+            z-index: 20;
+            background-color: $white;
+         }
+         &:nth-child(3){
+            position: absolute;
+            right: 0;
+            top: 10%;
+            z-index: 20;
+            background-color: $white;
+         }
+         &:nth-child(2){
+            width: 40%;
+            position: relative;
+            .info{
+               position: absolute;
+               bottom: 0;
+               background-color: transparent;
+               .writerJob{
+                  color: $white;
+               }
+               .blogLink{
+                  a{
+                     font-size: $mediumBig;
+                     font-weight: 600;
+                     color: $white;
+                  }
+               }
+               .details{
+                  width: 60%;
+                  color: $white;
+               }
+            }
+         }
+      }
+   }
+   .moreBlogs{
+      text-align: center;
+      margin-top: $largeMergin;
+      a{
+         text-decoration: none;
+         color: $orangeBtns;
+         &:hover .message{
+            color: $lightGray;
+         }
+         strong{
+            position: relative;
+            &::before{
+               content: "";
+               display: block;
+               position: absolute;
+               height:2px;
+               right: 0;
+               width: 100%;
+               background-color: $orangeBtns;
+               transition: all 1s;
+               opacity: 0;
+            }
+            &::after{
+               content: "";
+               position: absolute;     
+               left: -10%;
+               background: $lightBlueBackground;
+               bottom: -25px;
+               width: 10px;
+               height: 23px;
+            }
+         }
+         &:hover strong::before{
+            opacity: 0.7;
+         }
+         &:hover strong::after{
+            animation-name: getIn;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+          }
+          @keyframes getIn {
+            0%{
+              left: -10%;
+            }
+            25%{
+               left: 110%;
+            }
+            26%{
+               left: -10%;
+            }
+            50%{
+               left: 110%;
+            }
+            51%{
+               left: -10%;
+            }
+            75%{
+               left: 110%;
+            }
+            76%{
+               left: -10%;
+            }
+            99%{
+               left: -100%;
+            }
+            100%{
+              left: -10%;
+            }
+         }
+      }
+      
+   }
+   .Background_shapes{
+      > *{
+         position: absolute;   
+      }
+      img{
+         width: 100%;
+      }
+      .line{
+         z-index: -5;    
+         top: 30%;
+         left: 0;
+         width: 100%;
+      }
+      .circle{
+         width: 7%;
+         top: 20%;
+         left:15%
+      }
+      .blueStain{
+         width: 15%;
+         right: 30%;
+         bottom: 10%;
+         z-index: -3;
+      }
+      .greenPois{
+         left: 30%;
+         top: 15%;
+         z-index: -3;
+      }
+   }
+}
