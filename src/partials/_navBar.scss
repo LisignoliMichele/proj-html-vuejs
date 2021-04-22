@@ -1,4 +1,8 @@
 .navBar{
+   position: fixed;
+   top: 0;
+   z-index: 100;
+   width: 100%;
    height: 70px;
    font-size: $fontNormal;
    @include my-display-flex;
@@ -74,12 +78,14 @@
                @include my-display-flex;
                li{
                   list-style: none;
+                  font-size: $fontSmall;
+                  line-height: 30px;
                   &:hover{
                      background-color: $transpOrange;
                   }
                }
                .listTwo{
-                  margin: 0 30px;
+                  margin: 0 50px;
                }
             }
          }

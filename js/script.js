@@ -228,7 +228,7 @@ var app = new Vue(
                place: "Illinois, US"
             }, 
          ],
-         navIndex: 1,
+         navIndex: null,
          visibility: '',
       },
    },
