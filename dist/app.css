@@ -911,3 +911,72 @@ section h3 {
 .upcomingEvents .Background_shapes .eventsshape img {
   width: 70%;
 }
+
+.newsLetter {
+  background-color: #264384;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.newsLetter .subscribeCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsLetter .subscribeCell .label {
+  margin-right: 50px;
+  text-align: right;
+}
+.newsLetter .subscribeCell .label p {
+  font-family: "Prata", serif;
+  font-size: 35px;
+  color: #ffffff;
+}
+.newsLetter .subscribeCell .subscibe {
+  width: 30%;
+  position: relative;
+}
+.newsLetter .subscribeCell .subscibe input {
+  width: 100%;
+  font-size: 30px;
+  font-family: gilory;
+  color: #ffffff;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #ffffff;
+  padding: 5px;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.newsLetter .subscribeCell .subscibe input:focus {
+  opacity: 1;
+}
+.newsLetter .subscribeCell .subscibe .arrowClick {
+  position: absolute;
+  cursor: pointer;
+  z-index: 20;
+  top: 20%;
+  right: 0;
+}
+.newsLetter .subscribeCell .subscibe .arrowClick img {
+  width: 40px;
+}
+.newsLetter .Background_shapes > * {
+  position: absolute;
+}
+.newsLetter .Background_shapes .bottomRight_shape {
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+.newsLetter .Background_shapes .bottomRight_shape img {
+  height: 100%;
+}
+.newsLetter .Background_shapes .topLeft_shape {
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.newsLetter .Background_shapes .topLeft_shape img {
+  height: 100%;
+}
