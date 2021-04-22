@@ -176,7 +176,39 @@
       .circle{
          width: 7%;
          top: 20%;
-         left:15%
+         left:15%;
+         animation-name: moveCirle2;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;;
+          }
+          @keyframes moveCirle2 {
+            0%{
+               top: 20%;
+               left:15%;
+               width: 7%;
+            }
+            25%{
+               top: 40%;
+               left:30%;;
+               width: 20%;
+            }
+            50%{
+               top: -20%;
+               left:-20%;
+               width: 1%;
+            }
+            75%{
+               top: 60%;
+               left:30%;
+               width: 15%;
+            }
+            100%{
+               top: 20%;
+               left:15%;
+               width: 7%;
+            }
+         
       }
       .blueStain{
          width: 15%;

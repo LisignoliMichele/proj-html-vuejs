@@ -4,7 +4,7 @@ var app = new Vue(
       data:{
          navbar:[
             {
-               navTitle:"home",
+               navTitle:"Home",
                list:[
                   "maxCoach Education",
                   "Course portal",
@@ -272,19 +272,42 @@ gsap.to(".bgsapAAA", {
    rotation: -90,
    duration: 10,
  });
-
-//  ScrollTrigger.create({
-//    trigger: ".c",
-//    animation: anim,
- 
-//    markers: true,
-//    start: "top center",
-//    end: "top 100px",
-//    toggleClass: "active",
-//    pin: true,
-//    scrub: 1,
-//    onUpdate: self => {
-//      console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
-//    }
-//  });
+ gsap.to(".sectionQuotes", {
+   x: 0,
+   rotation: 360,
+   scrollTrigger: {
+     trigger: "bluebuttontrigger",
+     start: "top -1100px",
+     end: "top 100px",
+     scrub: false,
+     markers: false,
+     id: "scrub"
+   }
+});
+gsap.to(".greenpoisgsap", {
+   x: 100,
+   y: 400,
+   rotation: 360,
+   scrollTrigger: {
+     trigger: ".blueVIDpoisgsap",
+     start: "top 800px",
+     end: "top 20px",
+     scrub: true,
+     markers: false,
+     id: "scrub"
+   }
+});
+gsap.to(".blogbluestain", {
+   x: 100,
+   y: -400,
+   rotation: 360,
+   scrollTrigger: {
+     trigger: ".events",
+     start: "top 600px",
+     end: "top 20px",
+     scrub: true,
+     markers: true,
+     id: "scrub"
+   }
+});
  
