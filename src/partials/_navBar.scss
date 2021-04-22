@@ -27,13 +27,11 @@
          &:not(:last-child){
             margin-right: 40px;
          }
-         a{
+         i{
             position: relative;
             text-decoration: none;
             color: $textLight;
             padding: 24px 0;
-         }
-         > a{
             &:after{
                content: "\f078";
                font-family: "Font Awesome 5 Free"; 
@@ -64,10 +62,9 @@
             top: 40px;
             left: -15px;
             z-index: 30;
-            opacity: 0;
-            transition: $normalTransition;
+            display: none;
             &.active{
-               opacity: 1;
+               display: block;
             }
             .box{
                white-space: nowrap;
@@ -80,12 +77,17 @@
                   list-style: none;
                   font-size: $fontSmall;
                   line-height: 30px;
+                  a{
+                     text-decoration: none;
+                     color: $textLight;;
+                  }
                   &:hover{
                      background-color: $transpOrange;
                   }
                }
                .listTwo{
                   margin: 0 50px;
+                  z-index: 200;
                }
             }
          }

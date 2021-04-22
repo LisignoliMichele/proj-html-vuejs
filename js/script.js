@@ -234,3 +234,57 @@ var app = new Vue(
    },
    
 );
+
+gsap.to(".bgsapAAA", {
+   x: -100,
+   rotation: 30,
+   scrollTrigger: {
+     trigger: ".bgsap_starterAAA",
+     start: "top 800px",
+     end: "top 20px",
+     scrub: true,
+     markers: false,
+     id: "scrub"
+   }
+ });
+ 
+ const anim = gsap.to(".bgsapBBB", {
+   x: -550,
+   y: 700,
+   rotation: 360,
+   duration: 3,
+ });
+ const two = gsap.to(".bgsapCCC", {
+   x: -60,
+   y: 10,
+   rotation: 18,
+   duration: 10,
+ });
+ const three = gsap.to(".bgsapDDD", {
+   x: 30,
+   y: -100,
+   rotation: 10,
+   duration: 10,
+ });
+ const four = gsap.to(".bgsapEEE", {
+   x: 100,
+   y: 0,
+   rotation: -90,
+   duration: 10,
+ });
+
+//  ScrollTrigger.create({
+//    trigger: ".c",
+//    animation: anim,
+ 
+//    markers: true,
+//    start: "top center",
+//    end: "top 100px",
+//    toggleClass: "active",
+//    pin: true,
+//    scrub: 1,
+//    onUpdate: self => {
+//      console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+//    }
+//  });
+ 
