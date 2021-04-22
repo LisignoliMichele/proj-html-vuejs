@@ -306,7 +306,7 @@ gsap.to(".blogbluestain", {
      start: "top 600px",
      end: "top 20px",
      scrub: true,
-     markers: true,
+     markers: false,
      id: "scrub"
    }
 });
