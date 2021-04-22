@@ -1,5 +1,9 @@
 footer{
    .elements{
+      h5{
+         font-size: $fontNormal;
+         margin-bottom: $smallMargin
+      }
       margin: $paddingSection 0;
       @include my-display-flex;
       justify-content: space-around;
@@ -7,30 +11,53 @@ footer{
          width: 30%;
       }
       .element{
-         line-height: 30px;
+         line-height: 35px;
          ul{
             list-style: none;
+            a{
+               text-decoration: none;
+               color: $textLight;
+               &:hover{
+                  color: $orangeBtns;
+               }
+            }
+         }
+         .socialList{
+            li{
+               color: $iconsDarkGray;
+               cursor: pointer;
+               font-size: $titleh4SMALL;
+               &:not(:last-child){
+                  margin-right: 30px;
+               }
+            }
+         }
+         .insID{
+            color: $orangeBtns
          }
          .footer_images{
             @include my-display-flex;
             li{
                width: calc(100% / 3);
+               overflow: hidden;
                &:not(:last-child){
                   margin-right: $smallMargin;
                }
-               a{
-                  text-decoration: none;
-                  color: $textLight;
+               img{
+                  width: 100%;
+                  transition: $picturesTransition;
+                  &:hover{
+                     transform: scale(1.1);
+                     filter: sepia(0.5);
+                 }
                }
-            }
-            img{
-               width: 100%
-            }
+            }  
          }
       }
    }
    .copyright{
       text-align: center;
       font-size: $fontExtraSmall;
+      padding: $smallMargin;
    }
 }

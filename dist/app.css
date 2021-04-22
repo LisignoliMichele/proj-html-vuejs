@@ -94,7 +94,7 @@ body {
 
 .btn-transp-orange {
   border: transparent;
-  background-color: rgba(237, 111, 59, 0.1);
+  background-color: rgba(43, 89, 159, 0.1);
   font-family: gilory;
   font-weight: 500;
   color: #2B599F;
@@ -986,32 +986,57 @@ footer .elements {
   display: flex;
   justify-content: space-around;
 }
+footer .elements h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
 footer .elements > :nth-child(3n+1) {
   width: 30%;
 }
 footer .elements .element {
-  line-height: 30px;
+  line-height: 35px;
 }
 footer .elements .element ul {
   list-style: none;
+}
+footer .elements .element ul a {
+  text-decoration: none;
+  color: #696969;
+}
+footer .elements .element ul a:hover {
+  color: #2B599F;
+}
+footer .elements .element .socialList li {
+  color: #797979;
+  cursor: pointer;
+  font-size: 22px;
+}
+footer .elements .element .socialList li:not(:last-child) {
+  margin-right: 30px;
+}
+footer .elements .element .insID {
+  color: #2B599F;
 }
 footer .elements .element .footer_images {
   display: flex;
 }
 footer .elements .element .footer_images li {
   width: calc(100% / 3);
+  overflow: hidden;
 }
 footer .elements .element .footer_images li:not(:last-child) {
   margin-right: 15px;
 }
-footer .elements .element .footer_images li a {
-  text-decoration: none;
-  color: #696969;
-}
-footer .elements .element .footer_images img {
+footer .elements .element .footer_images li img {
   width: 100%;
+  transition: all 2s;
+}
+footer .elements .element .footer_images li img:hover {
+  transform: scale(1.1);
+  filter: sepia(0.5);
 }
 footer .copyright {
   text-align: center;
   font-size: 14px;
+  padding: 15px;
 }
