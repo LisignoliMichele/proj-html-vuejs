@@ -16,19 +16,74 @@
       }
    }
    .mainNav{
-      li{
+      @include my-display-flex;
+      .navElement{
+         position: relative;
          cursor: pointer;
          &:not(:last-child){
             margin-right: 40px;
          }
-         &:after{
-            content: "\f078";
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900;
-            margin-left: 5px;
-            font-size: $smallIcons;
+         a{
+            position: relative;
+            text-decoration: none;
+            color: $textLight;
+            padding: 24px 0;
          }
-      }
+         > a{
+            &:after{
+               content: "\f078";
+               font-family: "Font Awesome 5 Free"; 
+               font-weight: 900;
+               margin-left: 5px;
+               font-size: $smallIcons;
+            }
+            &::before{
+               content: "";
+               display: block;
+               position: absolute;
+               height: 2px;
+               bottom: 12px;
+               width: 0;
+               background-color:$orangeBtns;
+               transition: $normalTransition;
+             }
+             &:hover{
+               color: $orangeBtns;
+            }
+            
+             &:hover:before{
+               width: 100%;
+            }
+         }
+         .navELcontent{
+            position: absolute;
+            top: 40px;
+            left: -15px;
+            z-index: 30;
+            opacity: 0;
+            transition: $normalTransition;
+            &.active{
+               opacity: 1;
+            }
+            .box{
+               white-space: nowrap;
+               padding: 20px 30px 20px 15px;
+               border-bottom: 4px solid $orangeBtns;
+               background-color: $white;
+               box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+               @include my-display-flex;
+               li{
+                  list-style: none;
+                  &:hover{
+                     background-color: $transpOrange;
+                  }
+               }
+               .listTwo{
+                  margin: 0 30px;
+               }
+            }
+         }
+      }  
    }
    .socialNav{
       li{
@@ -37,6 +92,9 @@
          font-size: $mediumIcons;
          &:not(:last-child){
             margin-right: 30px;
+         }
+         &:hover{
+            color: $orangeBtns;
          }
       }
    }

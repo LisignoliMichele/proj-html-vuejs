@@ -149,18 +149,72 @@ p {
 .navBar .nav_logo img {
   width: 100%;
 }
-.navBar .mainNav li {
+.navBar .mainNav {
+  display: flex;
+}
+.navBar .mainNav .navElement {
+  position: relative;
   cursor: pointer;
 }
-.navBar .mainNav li:not(:last-child) {
+.navBar .mainNav .navElement:not(:last-child) {
   margin-right: 40px;
 }
-.navBar .mainNav li:after {
+.navBar .mainNav .navElement a {
+  position: relative;
+  text-decoration: none;
+  color: #696969;
+  padding: 24px 0;
+}
+.navBar .mainNav .navElement > a:after {
   content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-left: 5px;
   font-size: 10px;
+}
+.navBar .mainNav .navElement > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  bottom: 12px;
+  width: 0;
+  background-color: #2B599F;
+  transition: all 0.3s;
+}
+.navBar .mainNav .navElement > a:hover {
+  color: #2B599F;
+}
+.navBar .mainNav .navElement > a:hover:before {
+  width: 100%;
+}
+.navBar .mainNav .navElement .navELcontent {
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  z-index: 30;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.navBar .mainNav .navElement .navELcontent.active {
+  opacity: 1;
+}
+.navBar .mainNav .navElement .navELcontent .box {
+  white-space: nowrap;
+  padding: 20px 30px 20px 15px;
+  border-bottom: 4px solid #2B599F;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+.navBar .mainNav .navElement .navELcontent .box li {
+  list-style: none;
+}
+.navBar .mainNav .navElement .navELcontent .box li:hover {
+  background-color: rgba(43, 89, 159, 0.1);
+}
+.navBar .mainNav .navElement .navELcontent .box .listTwo {
+  margin: 0 30px;
 }
 .navBar .socialNav li {
   color: #797979;
@@ -169,6 +223,9 @@ p {
 }
 .navBar .socialNav li:not(:last-child) {
   margin-right: 30px;
+}
+.navBar .socialNav li:hover {
+  color: #2B599F;
 }
 
 .hero {

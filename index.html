@@ -52,14 +52,22 @@
                   <!-- /NAV-LEFT_logo -->
                   <!-- NAV-center_mainNav -->
                   <nav class="mainNav">
-                     <ul class="listInline">
-                        <li>Home</li>
-                        <li>Pages</li>
-                        <li>Courses</li>
-                        <li>Features</li>
-                        <li>Blog</li>
-                        <li>Shop</li>
-                     </ul>
+                     <div class="navElement" v-for="(navEL, index) in navbar " v-on:mouseleave="navIndex = null" v-on:mouseover="navIndex = index">
+                        <a href="#">{{navEL.navTitle}}</a></li>
+                        <div class="navELcontent" :class="navIndex == index ? 'active' : '' ">
+                           <div v-if="navIndex != null" class="box">
+                              <ul v-if="navbar[navIndex].list.length != 0">
+                                 <li v-for="li in navbar[navIndex].list"><a href="#blog">{{li}}</a></li>
+                              </ul>
+                              <ul class="listTwo" v-if="navbar[navIndex].listTwo.length != 0">
+                                 <li v-for="liTwo in navbar[navIndex].listTwo"><a href="#blog">{{liTwo}}</a></li>
+                              </ul>
+                              <div v-if="navbar[navIndex].image != ''" class="navPicLink">
+                                 <img :src="navbar[navIndex].image" alt="navPicLink">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </nav>
                   <!-- /NAV-center_mainNav -->
                   <!-- NAV-right_social -->

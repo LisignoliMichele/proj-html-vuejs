@@ -2,30 +2,97 @@ var app = new Vue(
    {
       el: "#app",
       data:{
-         testimonials:[
-            {  avatar: "02",
-               name: "Florence Themes",
-               feedTitle: "It's a choice of quality for people with special needs",
-               feed:	"I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
-               job: "Multimedia Admin",
+         navbar:[
+            {
+               navTitle:"home",
+               list:[
+                  "maxCoach Education",
+                  "Course portal",
+                  "Distant Learning",
+                  "Multimedia Pedagory",
+                  "Modern Schooling",
+                  "Remote Training",
+                  "Healt Coaching",
+                  "Gym Coaching",
+                  "Business",
+               ],
+               listTwo:[
+                  "Artist",
+                  "Kitchen Coach",
+                  "Motivation",
+                  "Dancing",
+                  "Guitar",
+                  "Yoga",
+                  "Photography",
+                  "Personal Finance",
+                  "Business",
+               ],
+               image: "img/headerIMG/homepages-mega-menu-image-alt-300x129.jpg",
             },
-            {  avatar: "04",
-               name: "Mina Hollace",
-               feedTitle: "High level of efficiency and scientific teaching methods",
-               feed:	"I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
-               job: "Freelancer",
+            {
+               navTitle:"Pages",
+               list:[
+                  "Start Here",
+                  "Success Story",
+                  "About me",
+                  "About us 01",
+                  "About us 02",
+                  "About us 03",
+                  "Contact me",
+                  "Contact us",
+                  "Purchase Guide",
+                  "Private Policy",
+                  "Terms of service",
+               ],
+               listTwo:[],
+               image: ""
             },
-            {  avatar: "03",
-               name: "Luvic Dubble",
-               feedTitle: "The MaxCoach team works really hard to ensure high quality",
-               feed:	"I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.",
-               job: "Private Tutor",
+            {
+               navTitle:"Courses",
+               list:[
+                  "Course Grid 01",
+                  "Course Grid 02",
+                  "Course Grid 03",
+                  "Membership Levels",
+                  "Become a Teacher",
+                  "Profile",
+                  "Checkout",
+                  "Single Layout"
+               ],
+               listTwo:[],
+               image: ""
             },
-            {  avatar: "01",
-               name: "Madley Pondor",
-               feedTitle: "The MaxCoach team works really hard to ensure high quality",
-               feed:	"I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
-               job: "IT Specialist",
+            {
+               navTitle:"Features",
+               list:[
+                  "Events",
+                  "Zoom Meetings",
+               ],
+               listTwo:[],
+               image: ""
+            },
+            {
+               navTitle:"Blog",
+               list:[
+                  "Blog Grid",
+                  "Blog Massonry",
+                  "Blog Classic",
+                  "Blog List",
+               ],
+               listTwo:[],
+               image: ""
+            },
+            {
+               navTitle:"Shop",
+               list:[
+                  "Shop Left Sidebar",
+                  "Shop right Sidebar",
+                  "Card",
+                  "Whishlist",
+                  "Single Product",
+               ],
+               listTwo:[],
+               image: ""
             },
          ],
          courses: [
@@ -86,6 +153,32 @@ var app = new Vue(
                image: "01",
             },
          ],
+         testimonials:[
+            {  avatar: "02",
+               name: "Florence Themes",
+               feedTitle: "It's a choice of quality for people with special needs",
+               feed:	"I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
+               job: "Multimedia Admin",
+            },
+            {  avatar: "04",
+               name: "Mina Hollace",
+               feedTitle: "High level of efficiency and scientific teaching methods",
+               feed:	"I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+               job: "Freelancer",
+            },
+            {  avatar: "03",
+               name: "Luvic Dubble",
+               feedTitle: "The MaxCoach team works really hard to ensure high quality",
+               feed:	"I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.",
+               job: "Private Tutor",
+            },
+            {  avatar: "01",
+               name: "Madley Pondor",
+               feedTitle: "The MaxCoach team works really hard to ensure high quality",
+               feed:	"I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+               job: "IT Specialist",
+            },
+         ],
          blogsTodisplay:[
             {
                writerJOB: "ARTIST",
@@ -135,6 +228,9 @@ var app = new Vue(
                place: "Illinois, US"
             }, 
          ],
+         navIndex: 1,
+         visibility: '',
       },
    },
+   
 );
